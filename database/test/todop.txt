@@ -1,4 +1,0 @@
-open done
-write done
-read pending
-merge pending
