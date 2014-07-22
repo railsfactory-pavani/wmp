@@ -1,14 +1,24 @@
 <h1>tables are</h1>
-<ol>
+<table border = "1">
 <% @table.each do |table| %>
-<li><%=table.values%> </li><br/>
+<%@x=table.values%> <br/>
+<%@x.each do |i| %>
 
+ <td><%=i%></td>
+ <%end%>
+</tr>
 <%end%>
-</ol>
+
+<table border = "1">
 <% @table2.each do |table| %>
-<li><%=table.values%> </li><br/>
+<%@x=table.values%> <br/>
+<%@x.each do |i| %>
 
+ <td><%=i%></td>
+ <%end%>
+</tr>
 <%end%>
+</table>
 
 <a href='/home'>click here to go back to home page</a>
 
